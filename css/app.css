@@ -1,0 +1,165 @@
+/* line 4, ../scss/app.scss */
+body {
+  font-size: 16px;
+  background-color: #F6EDED;
+}
+
+/* line 8, ../scss/app.scss */
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 250;
+  height: 55px;
+  line-height: 55px;
+  color: #FFF;
+  background-color: #FFF;
+}
+
+/* line 21, ../scss/app.scss */
+.header-logo {
+  padding: 0 25px;
+  float: right;
+  text-decoration: none;
+  color: #F5AD14;
+  font-size: large;
+}
+
+/* line 29, ../scss/app.scss */
+div.site-content {
+  padding-top: 135px;
+  text-align: center;
+}
+
+/* line 34, ../scss/app.scss */
+div#grille, form.formName, div.victoire, #restart, #new_game {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* ACCUEIL */
+/* line 42, ../scss/app.scss */
+.accueil_link {
+  display: block;
+  color: #F5AD14;
+  text-decoration: none;
+  font-size: 22px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+/* FORMULAIRE */
+/* line 53, ../scss/app.scss */
+form.formName {
+  margin-top: 50px;
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* line 63, ../scss/app.scss */
+form.formName input {
+  text-align: center;
+}
+
+/* line 66, ../scss/app.scss */
+.rowLauncher {
+  margin-top: 25px !important;
+}
+
+/* line 69, ../scss/app.scss */
+.btn {
+  border: 1px solid #F5AD14;
+  text-decoration: none;
+  color: #F5AD14;
+  background-color: #fff;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+/* GRILLE */
+/* line 82, ../scss/app.scss */
+.rowGrille {
+  margin-top: 25px;
+}
+
+/* line 85, ../scss/app.scss */
+.insertJeton {
+  position: relative;
+  top: -20px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+/* line 93, ../scss/app.scss */
+.case_top {
+  position: relative;
+  top: -52px;
+}
+
+/* line 97, ../scss/app.scss */
+.case {
+  padding: 0;
+  height: 65px;
+  width: 65px;
+  background-image: url("../img/case.png");
+  cursor: pointer;
+}
+
+/* line 108, ../scss/app.scss */
+.case_joueur {
+  background-color: red;
+}
+
+/* line 111, ../scss/app.scss */
+.pion {
+  background-color: yellow;
+  height: 66px;
+  width: 66px;
+  border-radius: 50%;
+}
+
+/* line 118, ../scss/app.scss */
+.rouge {
+  background-color: #F00;
+}
+
+/* line 121, ../scss/app.scss */
+.jaune {
+  background-color: #FF0;
+}
+
+/* line 124, ../scss/app.scss */
+.joueur_turn {
+  font-size: 30px;
+}
+
+/* VICTOIRE */
+/* line 129, ../scss/app.scss */
+.bold {
+  font-weight: bold;
+  color: #F5AD14;
+}
+
+/* line 134, ../scss/app.scss */
+.victory .site-cache {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+/* line 142, ../scss/app.scss */
+.victory .victoire {
+  float: right;
+  z-index: 250;
+  margin: 120px;
+  padding-top: 65px;
+  font-size: 25px;
+  height: 300px;
+  width: 350px;
+  background-color: #FFF;
+}

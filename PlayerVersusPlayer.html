@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="" />
+    <meta name="author" content="Benjamin Lelievre">
+    <link rel="icon" href="img/favicon.ico">
+
+    <title>Puissance 4</title>
+
+    <link href="css/16-columns.min.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+	<link href="css/modal.css" rel ="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <body>
+        <header class="header">
+          <div class="row">
+            <div class="small-12 columns">
+              <a href="index.html" class="header-logo">Accueil</a>
+			  <a id="myBtn" class="header-logo"> Régles du jeu </a>
+            </div>
+            
+          </div>
+        </header>
+		
+		
+
+
+		
+
+        <div class="site-content">
+            
+        <div class="row">
+          <div class="small-16 columns">
+            <div class="enregistrerJoueurs">
+              <div class="row">
+                  <form class="formName">
+                    <input type="text" id="joueur1" placeholder="Prenom du premier joueur">
+                    <p>VS</p>
+                    <input type="text" id="joueur2" placeholder="Prenom du second joueur">
+                  </form>
+                  </div>
+              <div class="row rowLauncher">
+                  <a  href="#" class="btn" id="launcher">Lancer la partie</a>
+              </div>
+            </div>
+          </div>
+        </div>
+		
+		
+		
+		<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+     
+    </div>
+    <div class="modal-body">
+ 
+	<p>La grille de jeu est une grille de 6 rangées et 7 colonnes.</p>
+	<p>Le but du jeu est d'aligner une suite de 4 pions de même couleur sur la grille.</p>
+	<p> Chaque joueur dispose de 21 pions d'une couleur (par convention, en général jaune ou rouge).</p>
+	<p>le pion coulisse alors jusqu'à la position la plus basse possible dans la dite colonne à la suite de quoi c'est à l'adversaire de jouer. </p>
+	<p>Le vainqueur est le joueur qui réalise le premier un alignement (horizontal, vertical ou diagonal) </p>
+	<p>consécutif d'au moins quatre pions de sa couleur. Si, alors que toutes les cases de la grille de jeu sont remplies, aucun des deux joueurs n'a réalisé un tel alignement, la partie est déclarée nulle. </p>
+    </div>
+   
+  </div>
+
+</div>
+
+            <div class="row rowGrille">
+              <div class="medium-12 columns">
+                <div id="grille">
+                </div>
+              </div>
+              <div class="medium-4 columns">
+                <div id="joueurs_turn">
+                  
+                </div>
+              </div>
+            </div>
+            <div class="site-cache">
+              <div class="victoire">
+                
+              </div>
+            </div>
+        </div>
+    
+    <script type="text/javascript" src="js/lib/jquery.js"></script>
+    <script type="text/javascript" src="js/lib/Render.js"></script>
+    <script type="text/javascript" src="js/lib/twig.min.js"></script>
+
+    <script type="text/javascript" src="js/assets/fastclick.js"></script>
+    <script type="text/javascript" src="js/assets/modernizr.js"></script>
+    <script type="text/javascript" src="js/assets/asset.min.js"></script>
+	<script type="text/javascript" src="js/assets/modal.js"></script>
+
+    <script type="text/javascript" src="js/obj/Obj.js"></script>
+    <script type="text/javascript" src="js/obj/PuissObj.js"></script>
+    
+    <script type="text/javascript" src="js/static/PuissPlateau.js"></script>
+    <script type="text/javascript" src="js/obj/PuissJoueur.js"></script>
+    
+    <script src="js/jeu.js"></script>
+	
+  </body>
+</html>

@@ -1,0 +1,23 @@
+{% for idx,lignes in grille_jeu %}
+	<div class="row">
+		{% for colonne,value in lignes %}
+			{% if colonne == 7 %}
+				<div class="case small-2 columns end {{value}}" data-ligne="{{idx}}" data-value="{{value}}" data-colonne="{{colonne}}">
+					{% if idx == 1 %}
+						<span class="insertJeton" data-colonne="{{colonne}}">
+							<img src="./img/arrow.png" alt="choix_colonne">
+						</span>
+					{% endif %}
+				</div>
+			{% else %}
+				<div class="case small-2 columns {{value}}" data-ligne="{{idx}}" data-value="{{value}}" data-colonne="{{colonne}}">
+					{% if idx == 1 %}
+						<span class="insertJeton" data-colonne="{{colonne}}">
+							<img src="./img/arrow.png" alt="choix_colonne">			
+						</span>
+					{% endif %}
+				</div>
+			{% endif %}
+		{% endfor %}
+	</div>
+{% endfor %}

@@ -1,0 +1,153 @@
+@import "compass";
+@import "variables";
+
+	body
+	{
+		font-size: 16px;
+	}
+	 .header
+	{
+		position: fixed;
+		left: 0;
+		right: 0;
+		z-index: 250;
+
+		height: $header-height;
+		line-height: $header-height;
+		color: #FFF;
+
+		background-color: $header-color;
+	}
+	.header-logo
+	{
+		padding: 0 25px;
+		float: right;
+		text-decoration: none;
+		color: $btn-color;
+		font-size: large;
+	}
+	div.site-content
+	{
+		padding-top: 95px;
+		text-align:center;
+	}
+	div#grille, form.formName,div.victoire,#restart,#new_game
+	{
+		display:inline-block;
+		vertical-align:middle;
+	}
+
+	/* ACCUEIL */
+
+	.accueil_link{
+		display: block;
+		color : $btn-color;
+		text-decoration: none;
+		font-size: 22px;
+		padding-bottom: 15px;
+		padding-top: 15px;
+	}
+
+	/* FORMULAIRE */
+
+	form.formName
+	{
+		margin-top: 50px;
+
+		border: 1px solid black;
+		padding: 10px;
+		text-align:center;
+		border-radius: 5px;
+
+	}
+	form.formName input{
+		text-align:center;
+	}
+	.rowLauncher{
+		margin-top: 25px !important;
+	}
+	.btn{
+		border: 1px solid $btn-color;
+		text-decoration: none;
+		color : $btn-color;
+
+		background-color: #fff;
+		
+		padding: 5px;
+		margin-bottom: 15px;
+	}
+
+	/* GRILLE */
+
+	.rowGrille{
+		margin-top: 25px;
+	}
+	.insertJeton{
+		position: relative;
+		top: -20px;
+		width: 25px;
+		height: 25px;
+
+		cursor: pointer;
+	}
+	.case_top{
+		position: relative;
+		top: -52px;
+	}
+	.case
+	{
+		padding: 0;
+
+		height: 65px;
+		width: 65px;
+
+		background-image: url("../img/case.png");
+		cursor: pointer;
+
+	}
+	.case_joueur{
+		background-color: red;
+	}
+	.pion
+	{
+		background-color: yellow;
+		height: 66px;
+		width: 66px;
+		border-radius: 50%;
+	}
+	.rouge{
+		background-color: #F00;
+	}
+	.jaune{
+		background-color: #FF0;
+	}
+	.joueur_turn{
+		font-size: 30px;
+	}
+
+	/* VICTOIRE */
+	.bold{
+		font-weight: bold;
+		color: $btn-color;
+	}
+	.victory{
+		.site-cache{
+			position: absolute;
+			top: 0;
+			right: 0;
+			left: 0;
+			bottom: 0;
+			background-color: rgba(#000,0.6);
+		}
+		.victoire{
+			z-index: 250;
+
+			margin-top: 120px;
+			padding-top: 65px;
+			font-size: 25px;
+
+			height: 300px;
+			width: 350px;
+			background-color: #FFF;
+		}
+	}
